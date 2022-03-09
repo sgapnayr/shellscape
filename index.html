@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Panama City Beach, Florida, Vacation, etc."
+    />
+    <meta name="description" content="" />
+    <title>Shellscape | Vacation in Paradise</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Poppins:wght@100;200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2a3c4ab54d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section
+      class="header box-skewed-right"
+      data-aos="slide-down"
+      data-aos-duration="650"
+    >
+      <nav>
+        <a href="index.html"
+          ><img
+            src="images/logo.png"
+            class="temp-logo"
+            alt=""
+            data-aos="slide-up"
+            data-aos-duration="2000"
+        /></a>
+
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onClick="hideMenu()"></i>
+          <ul data-aos="slide-left" data-aos-duration="2200">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTENT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" data-aos="fade" onClick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1 data-aos="fade-up" data-aos-duration="1000">
+          Vacation In Paradise
+        </h1>
+        <p data-aos="slide-up" data-aos-duration="2000">
+          In the heart of Panama City Beach, enjoy our unbeatable views and
+          intrinsic experiences.
+        </p>
+        <a href="#" class="hero-btn">Book Your Vacation</a>
+      </div>
+    </section>
+
+    `<!----- Package ----->
+    <section class="package">
+      <h1 data-aos="fade-down" data-aos-duration="600" class="package-header">
+        Packages
+      </h1>
+      <p data-aos="fade-down" data-aos-duration="800">
+        (Please select a package)
+      </p>
+
+      <div class="row" data-aos="fade-up" data-aos-duration="900">
+        <div class="package-col first-package heading">
+          <h3>One Night</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, sint.
+          </p>
+        </div>
+        <div class="package-col second-package heading">
+          <h3>Weekly Package</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, sint.
+          </p>
+        </div>
+        <div class="package-col third-package heading">
+          <h3>Custom Package</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, sint.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!----- Location ----->
+    <section class="location">
+      <h1>Location</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, ducimus.
+      </p>
+
+      <div class="row">
+        <div class="location-col">
+          <img src="images/sunset.jpg" alt="" />
+          <div class="layer">
+            <h3>View From Balcony</h3>
+          </div>
+        </div>
+        <div class="location-col">
+          <img src="images/pool.png" alt="" />
+          <div class="layer">
+            <h3>View From Balcony</h3>
+          </div>
+        </div>
+        <div class="location-col">
+          <img src="images/night.png" alt="" />
+          <div class="layer">
+            <h3>View From Balcony</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----- JavaScript for Toggle Meu ----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
