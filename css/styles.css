@@ -250,6 +250,7 @@ h3 {
 .package-warning {
   opacity: 0;
   margin-top: -2rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .package-col h2 {
@@ -367,12 +368,17 @@ h3 {
     color: var(--primary-color);
   }
 
+  .package-col p {
+    padding-top: 1.5rem;
+    transform: translateY(20%);
+  }
+
   .package-col h2 {
     display: none;
   }
 
   .package-warning {
-    opacity: 0.75;
+    opacity: 0.5;
     font-style: italic;
     margin-top: 2rem;
   }
@@ -611,12 +617,12 @@ h3 {
   cursor: pointer;
 }
 
-/* <!----- About Us Page -----> */
+/* <!----- Packages Page -----> */
 .sub-header {
   height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(../images/bannerview.jpg);
+    url(../images/sunset3.png);
 
   background-position: center;
   background-size: cover;
@@ -632,6 +638,11 @@ h3 {
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease-in-out;
+  font-weight: 400;
+}
+
+.package-page {
+  margin-bottom: -5rem;
 }
 
 .about-us {
@@ -673,7 +684,6 @@ h3 {
 @media screen and (max-height: 548px) {
   .sub-header h1 {
     transform: translateY(-300%);
-    font-weight: 400;
   }
 }
 
@@ -681,4 +691,19 @@ h3 {
   .sub-header h1 {
     opacity: 0;
   }
+}
+
+/* <!----- Experiences Page -----> */
+.experiences-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/poolviewhigh.png);
+
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: -5rem;
 }
