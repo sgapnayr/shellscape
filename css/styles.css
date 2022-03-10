@@ -209,6 +209,10 @@ nav .fa {
   font-weight: 600;
 }
 
+.package-footer {
+  margin-top: 4rem;
+}
+
 h1 {
   font-size: 36px;
   font-weight: 600;
@@ -753,4 +757,20 @@ h3 {
 
 .experiences-page {
   padding-top: 12rem;
+}
+
+/* Contact */
+.contact-header {
+  height: 50vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/pooltop.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.contact-page {
+  margin-top: -4rem;
 }
