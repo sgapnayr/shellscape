@@ -171,7 +171,7 @@ nav .fa {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     backdrop-filter: blur(4px);
-    box-shadow: 1px -1px rgba(4, 9, 30, 1));
+    box-shadow: 1px -1px rgba(4, 9, 30, 1);
   }
 
   nav .fa {
@@ -700,14 +700,46 @@ h3 {
 /* <!----- Experiences Page -----> */
 .experiences-header {
   height: 50vh;
-  width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(../images/poolviewhigh.png);
-
   background-position: center;
   background-size: cover;
   text-align: center;
   color: var(--white-color);
   text-align: center;
-  margin-bottom: -5rem;
+}
+
+.experiences-heading {
+  text-align: center;
+  opacity: 0.5;
+  font-weight: 300;
+  color: var(--blend2-color);
+  padding: 3rem;
+  margin-top: 4rem;
+}
+
+.experiences-content {
+  padding-bottom: 2rem;
+}
+
+.experiences-content img {
+  flex-basis: 50%;
+  width: 100%;
+  margin: auto 0;
+  object-fit: cover;
+  height: 15rem;
+  display: flex;
+  height: 24rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.experiences-info {
+  padding: 0.25rem;
+}
+
+.experiences-p {
+  padding-bottom: 0.75rem;
+  margin-top: -1rem;
 }
