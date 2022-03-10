@@ -25,7 +25,7 @@ html {
   background-position: center;
   background-size: cover;
   position: relative;
-  margin-bottom: -9.5rem;
+  margin-bottom: -7rem;
 }
 
 .box-skewed-right {
@@ -243,6 +243,26 @@ h3 {
   justify-self: center;
 }
 
+.package h3 {
+  font-weight: 300;
+}
+
+.package-warning {
+  opacity: 0;
+  margin-top: -2rem;
+}
+
+.package-col h2 {
+  transition: all 0.2s ease-in-out;
+  color: var(--primary-color);
+}
+
+.package-col:hover h2 {
+  transform: translateY(10%);
+  opacity: 0;
+  color: var(--white-color);
+}
+
 .package-col:hover {
   box-shadow: 1px 1px 8px rgba(165, 173, 189, 0.9);
   transition: all 0.3s;
@@ -257,6 +277,7 @@ h3 {
 
 .package-col:hover p {
   opacity: 1;
+  transform: translateY(55%);
 }
 
 .package-col h3 {
@@ -276,8 +297,16 @@ h3 {
   color: white;
 }
 
+.package-rates {
+  display: 0;
+}
+
+.package-rates:hover {
+  display: block;
+}
+
 .package-col:hover h3 {
-  bottom: 10%;
+  bottom: 0%;
   opacity: 0;
   color: var(--primary-color);
 }
@@ -316,6 +345,34 @@ h3 {
 @media screen and (max-width: 768px) {
   .row {
     flex-direction: column;
+  }
+
+  .package-col p {
+    opacity: 1;
+  }
+
+  .package-col:hover p {
+    opacity: 0;
+  }
+
+  .package-col h3 {
+    bottom: 10%;
+    opacity: 1;
+    color: var(--primary-color);
+  }
+
+  .package-col h2 {
+    display: none;
+  }
+
+  .package-warning {
+    opacity: 0.75;
+    font-style: italic;
+    margin-top: 2rem;
+  }
+
+  .package-rates {
+    display: none;
   }
 }
 
@@ -391,7 +448,7 @@ h3 {
   padding-top: 100px;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-bottom: -7rem;
+  margin-bottom: -2rem;
 }
 
 .facilities-col {
@@ -431,17 +488,19 @@ h3 {
   margin: auto;
   padding-top: 100px;
   text-align: center;
-  margin-bottom: -5rem;
+  margin-bottom: -8rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonial-col {
-  flex-basis: 44%;
   border-radius: 10px;
+  flex-basis: 44%;
   margin-bottom: 5%;
   text-align: left;
   background: rgb(248, 248, 248);
   cursor: pointer;
-  display: flex;
   transition: all 0.2s ease-in-out;
   padding: 1rem;
   box-shadow: 1px 1px 8px rgba(165, 173, 189, 0.3);
@@ -449,10 +508,21 @@ h3 {
 }
 
 .testimonial-col img {
-  height: 5.1rem;
-  width: 5.6rem;
+  display: flex;
+  height: 9rem;
+  width: 9rem;
   border-radius: 50%;
   object-fit: cover;
+  transform: translateX(110%);
+  margin-bottom: -1.5rem;
+  margin-right: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-col h3 {
+  display: flex;
+  justify-self: center;
 }
 
 .testimonial-col:hover {
@@ -462,7 +532,12 @@ h3 {
 
 .testimonial-col p {
   padding: 0;
-  padding-left: 1rem;
+  padding-left: 0rem;
+  padding-bottom: 0.5rem;
+}
+
+.testimonial-info {
+  text-align: left;
 }
 
 .testimonial-col .fa {
@@ -473,6 +548,9 @@ h3 {
   .testimonial-col img {
     margin-right: 30px;
     margin-left: 5px;
+    width: 7rem;
+    height: 7rem;
+    transform: translateX(140%);
   }
 }
 
@@ -481,7 +559,7 @@ h3 {
   margin: 100px auto;
   width: 80%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(../images/sunset2.png);
+    url(../images/buildingnight.png);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -504,6 +582,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
   .cta h1 {
+    font-size: 36px;
   }
 }
 
