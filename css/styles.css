@@ -119,7 +119,7 @@ nav img {
   padding: 12px 34px;
   position: relative;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .hero-btn:hover {
@@ -137,20 +137,25 @@ nav .fa {
     font-size: 62px;
     transition: 0.5s ease-in-out;
   }
-
   .text-box p {
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .text-box h1 {
-    font-size: 20px;
+    font-size: 32px;
+    transition: 0.5s ease-in-out;
+  }
+  .text-box p {
+    font-size: 12px;
     transition: 0.5s ease-in-out;
   }
 
   .nav-links ul li {
     display: block;
-    transition: 0.5s;
+    transition: 0.2s;
   }
 
   .nav-links {
@@ -232,11 +237,44 @@ h3 {
   margin: 10px 0;
 }
 
+.package-col h3 {
+  align-self: center;
+  justify-self: center;
+}
+
 .package-col:hover {
   box-shadow: 1px 1px 8px rgba(165, 173, 189, 0.9);
   transition: all 0.3s;
   cursor: pointer;
   transform: scale(1.05);
+}
+
+.package-col p {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.package-col:hover p {
+  opacity: 1;
+}
+
+.package-col h3 {
+  width: 100%;
+  font-weight: 500;
+  color: var(--white-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  font-size: 22px;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.package-col:hover h3 {
+  left: 30%;
+  opacity: 0;
+  color: var(--primary-color);
 }
 
 .package-col.first-package {
@@ -317,7 +355,7 @@ h3 {
 }
 
 .layer:hover {
-  background: rgba(23, 190, 221, 0.7);
+  background: rgba(23, 190, 221, 0.5);
   cursor: pointer;
 }
 
@@ -331,13 +369,13 @@ h3 {
   position: absolute;
   font-size: 22px;
   opacity: 0;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .layer:hover h3 {
   bottom: 30%;
   opacity: 1;
-  border: 1px solid white;
+  border: 3px solid white;
 }
 
 /* Facilities */
@@ -356,7 +394,7 @@ h3 {
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   box-shadow: 1px 1px 8px rgba(165, 173, 189, 0.3);
   padding: 1rem;
 }
@@ -391,22 +429,22 @@ h3 {
 }
 
 .testimonial-col {
-  flex-basis: 40%;
+  flex-basis: 44%;
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
   background: rgb(248, 248, 248);
   cursor: pointer;
   display: flex;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   padding: 1rem;
   box-shadow: 1px 1px 8px rgba(165, 173, 189, 0.3);
   font-size: larger;
 }
 
 .testimonial-col img {
-  height: 7rem;
-  width: 7rem;
+  height: 5rem;
+  width: 5.9rem;
   border-radius: 50%;
   object-fit: cover;
 }
