@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Panama City Beach, Florida, Vacation, etc."
+    />
+    <meta name="description" content="" />
+    <title>Shellscape | Vacation in Paradise</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Poppins:wght@100;200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2a3c4ab54d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!----- NavBar ----->
+    <section class="sub-header" data-aos="slide-down" data-aos-duration="650">
+      <nav>
+        <a href="index.html" data-aos="fade" data-aos-duration="2000"
+          ><img
+            src="images/Untitled_design-6-removebg-preview.png"
+            class="temp-logo"
+            alt=""
+            data-aos="slide-up"
+            data-aos-duration="1500"
+        /></a>
+
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onClick="hideMenu()"></i>
+          <ul data-aos="slide-left" data-aos-duration="1200">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="packages.html">PACKAGES</a></li>
+            <li><a href="">EXPERIENCES</a></li>
+            <li><a href="">CONTENT</a></li>
+            <li><a href="">HELP</a></li>
+          </ul>
+        </div>
+        <i
+          class="fa fa-bars"
+          data-aos="fade-down"
+          data-aos-duration="1200"
+          onClick="showMenu()"
+        ></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!----- About Us Content ----->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>Shellscape is an amazing..</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat,
+            non.
+          </p>
+          <a href="" class="hero-btn blue-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="images/custom.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!----- Footer ----->
+    <section class="footer" data-aos="fade-up" data-aos-duration="700">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cum
+        facilis aliquam optio voluptatum at earum quasi maiores quo! Deserunt?
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-phone"></i>
+      </div>
+      <p>Made by &copy; Shellscape</p>
+    </section>
+
+    <!----- JavaScript for Toggle Menu ----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
