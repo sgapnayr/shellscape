@@ -79,7 +79,7 @@ nav img {
   display: block;
   height: 2px;
   margin: auto;
-  transition: 0.5s;
+  transition: 0.3s;
   width: 0%;
 }
 
@@ -159,7 +159,7 @@ nav .fa {
   }
 
   .nav-links {
-    background-color: var(--primary-color);
+    background-color: none;
     height: 100vh;
     position: absolute;
     right: -200px;
@@ -168,6 +168,10 @@ nav .fa {
     transition: all 0.7s ease-in-out;
     width: 200px;
     z-index: 2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    backdrop-filter: blur(4px);
+    box-shadow: 1px 1px 10px rgba(35, 182, 209, 0.25);
   }
 
   nav .fa {
