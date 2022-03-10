@@ -326,7 +326,7 @@ h3 {
 
 .package-col.second-package {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(../images/bed2.png);
+    url(../images/bed2-2x.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -340,6 +340,11 @@ h3 {
   background-size: cover;
   position: relative;
   color: var(--white-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .package-col h2 {
+  }
 }
 
 @media screen and (max-width: 768px) {
