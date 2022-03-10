@@ -157,6 +157,10 @@ nav .fa {
     display: block;
     transition: 0.2s;
   }
+  .nav-links ul li a:hover::after {
+    width: 60%;
+    transform: translateX(-35%);
+  }
 
   .nav-links {
     background-color: rgba(0, 0, 0, 0.3);
@@ -234,6 +238,10 @@ p {
   transition: all 0.3s;
   box-shadow: 1px 1px 8px rgba(165, 173, 189, 0.3);
   padding-bottom: 3rem;
+}
+
+.package-col a {
+  text-decoration: none;
 }
 
 h3 {
@@ -610,7 +618,6 @@ h3 {
 }
 
 .footer h4 {
-  margin-left: 25px;
   margin-top: 20px;
   font-weight: 600;
 }
@@ -626,7 +633,7 @@ h3 {
   height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(../images/sunset3.png);
+    url(../images/poolviewhigh.png);
 
   background-position: center;
   background-size: cover;
@@ -701,7 +708,7 @@ h3 {
 .experiences-header {
   height: 50vh;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(../images/poolviewhigh.png);
+    url(../images/sunset3.png);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -742,4 +749,8 @@ h3 {
 .experiences-p {
   padding-bottom: 0.75rem;
   margin-top: -1rem;
+}
+
+.experiences-page {
+  padding-top: 12rem;
 }
